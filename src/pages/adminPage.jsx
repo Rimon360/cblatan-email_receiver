@@ -24,7 +24,7 @@ export default function EmailViewer() {
         { emailId, email_body, email_title },
         {
           headers: { Authorization: "Bearer " + token },
-        }
+        },
       )
     } catch (error) {
       console.error("Error marking email as read:", error)
@@ -128,10 +128,13 @@ export default function EmailViewer() {
             </div>
 
             {/* Email Body */}
-            <div className="flex-1 bg-white p-6 overflow-y-auto">
-              <div className="max-w-3xl">
-                <p className="text-gray-700 leading-relaxed whitespace-pre-wrap">{selectedEmail.body}</p>
-              </div>
+            <div className="flex-1 bg-white p-6 shadow-2xl rounded-md">
+              <iframe
+                title="email"
+                sandbox="allow-same-origin allow-scripts allow-popups allow-top-navigation-by-user-activation"
+                srcDoc={selectedEmail.body}
+                style={{ width: "100%", height: "100%", border: "none" }}
+              />
             </div>
           </>
         ) : (
