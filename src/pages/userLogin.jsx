@@ -51,7 +51,7 @@ function Login() {
   const [showPassword, setShowPassword] = useState(false)
   return (
     <section className=" w-full h-[95vh] flex items-center justify-center">
-      <div className="form w-full max-w-sm p-6 bg-white rounded-2xl shadow-lg   border-blue-900">
+      <div className="form w-full max-w-sm p-6 bg-gray-900 rounded-2xl shadow-lg   border-blue-900">
         <div className="w-full flex justify-center">
           <img src={logo} alt="Logo" className="rounded-xl w-50" srcSet="" />
         </div>

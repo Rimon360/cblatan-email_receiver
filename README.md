@@ -14,7 +14,7 @@ cd /home/appcbl-email/htdocs/email.appcbl.lat/frontend
 
 
 git add .
-git commit -m 'v1.0.0'
+git commit -m 'v1.0.1'
 git push origin main
 
 

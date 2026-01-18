@@ -30,7 +30,7 @@ a:hover {
 body {
   height: 100vh;
   width: 100vw;
-  @apply bg-gray-100;
+  @apply bg-radial from-gray-900 to-gray-950 to-90%;
   overflow: hidden;
 }
 
@@ -48,7 +48,7 @@ label[type='button'] {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  @apply bg-gray-100 px-2 py-2;
+  @apply bg-gray-950 px-2 py-2;
   cursor: pointer;
 }
 
@@ -80,7 +80,7 @@ label[type='button']:focus {
 
 input {
   outline: none;
-  @apply bg-gray-100 text-black p-2 rounded-md hover:border-[#646cff] hover:border-1 focus:border-dotted
+  @apply bg-gray-950 p-2 rounded-md hover:border-[#646cff] hover:border-1 focus:border-dotted
 }
 
 form {
