@@ -19,7 +19,7 @@ function ProtectedRoute({ children }) {
         let user = res.data.user
         if (user && user.email_verified) {
           res.data.user.token = token
-          if (!["appcbl_soft", "admin", "specific", "member", "all_profile"].includes(user.role)) {
+          if (!["appcbl_soft", "admin", "specific", "member", "all_profile", 'manager'].includes(user.role)) {
             toast.error("¡Aún no tienes permiso para utilizar este software!")
             setVerified(false)
             return

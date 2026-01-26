@@ -10,11 +10,11 @@ ssh root@31.97.253.229
 
 Hf5455#@?+5d5FFD
 
-cd /home/appcbl-email/htdocs/email.appcbl.lat/frontend
+cd /home/appcbl-email/htdocs/email.appcbl.lat
 
 
 git add .
-git commit -m 'v1.0.1'
+git commit -m 'v1.0.2'
 git push origin main
 
 
