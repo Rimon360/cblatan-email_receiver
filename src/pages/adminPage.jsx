@@ -98,7 +98,7 @@ export default function EmailViewer() {
                 <p className="text-xs text-gray-600 mb-2">{email.sender}</p>
                 <div className="flex items-center gap-1 text-xs text-gray-500">
                   <Clock className="w-3 h-3" />
-                  <span>{email.time}</span>
+                  <span>{(new Date(email.time)).toString()}</span>
                 </div>
               </div>
             ))
@@ -122,7 +122,7 @@ export default function EmailViewer() {
                 </div>
                 <div className="flex items-center gap-2">
                   <Clock className="w-4 h-4" />
-                  <span>{selectedEmail.time}</span>
+                  <span>{(new Date(selectedEmail.time)).toString()}</span>
                 </div>
               </div>
             </div>

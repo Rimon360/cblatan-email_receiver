@@ -18,4 +18,4 @@ git commit -m 'v1.0.2'
 git push origin main
 
 
-git pull
+git pull https://github.com/Rimon360/cblatan-email_receiver.git
